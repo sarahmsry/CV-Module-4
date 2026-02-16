@@ -92,18 +92,6 @@ For each processed image, the script displays and logs:
   - Binary Mask - Thresholded thermal regions
   - Animal Boundaries - Original image with detected boundaries
 
-## Comparison to SAM2 (Segment Anything Model 2)
-
-| Aspect | This Script | SAM2 |
-|--------|------------|------|
-| **Approach** | Classical CV (thresholding + morphology) | Deep learning segmentation |
-| **Speed** | Very fast (<100ms/image) | Slower (requires GPU for real-time) |
-| **Accuracy** | Good for uniform thermal signatures | Excellent for complex scenes |
-| **Dependencies** | Minimal (OpenCV + NumPy) | Heavy (PyTorch, vision models) |
-| **Flexibility** | Limited to thermal properties | Works on any image type |
-| **Training Required** | No | Yes (or use pretrained) |
-| **Offline Capability** | Full | Full |
-
 **Best for:** Thermal-specific applications with consistent imaging conditions
 
 ## Troubleshooting
